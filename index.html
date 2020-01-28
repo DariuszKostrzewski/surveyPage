@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <title>FreeCodeCamp Survey Form Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lekton:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+  </head>
+
+  <body>
+
+    <header class="header">
+
+      <div class="title col-1">
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+      </div>
+
+      <div class="logo col-2">
+        <img id="logo" src="https://drive.google.com/uc?id=1ZuInSloBiyNKQsSfhYJzEXMBes-ofTYm">
+      </div>
+
+      <div class="description row-1">
+        <p id="description">Thank you for taking the time to fill this form. Your opinion will help us improve the platform.</p>
+      </div>
+
+    </header>
+
+    <main class="main">
+
+      <form id="survey-form" action="survey.html" method="post">
+
+        <fieldset class="sub-form">
+
+          <legend class="legend">Your basic info - role</legend>
+
+          <label id="name-label" for="name">Name</label>
+          <input id="name" type="text" name="name" value="" placeholder="name" pattern="[A-Za-z].{3,}" required>
+
+          <label id="email-label" for="email">Email</label>
+          <input id="email" type="email" name="user_email" value="" placeholder="email" required>
+
+          <label id="number-label" for="age">Age</label>
+          <input id="number" type="number" name="user_age" value="" min="10" max="99" placeholder="age">
+
+          <label id="dropdown-label" for="dropdown">Which option best describes your current role?</label>
+          <select class="dropdown" name="user_role">
+            <option value="">Select current role</option>
+            <option value="student">Student</option>
+            <option value="full_time_job">Full Time Job</option>
+            <option value="full_time_learner">Full Time Learner</option>
+            <option value="not_to_say">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+
+          <label id="job-label" for="job">Job role:</label>
+          <select id="job" name="user-job">
+            <option name="">Select job role below</option>
+            <optgroup label="Web">
+
+              <option name="frontnd_developer">Frontend Developer</option>
+              <option name="php_developer">PHP Developer</option>
+              <option name="python_developer">Python Developer</option>
+              <option name="rails_developer">Rails Developer</option>
+              <option name="web_designer">Web Designer</option>
+              <option name="wordpress_developer">PHP Developer</option>
+            </optgroup>
+            <optgroup label="Mobile">
+              <option name="android_developer">AndroidP Developer</option>
+              <option name="ios_developer">iOS Developer</option>
+              <option name="mobile_designer">Mobile Designer</option>
+            </optgroup>
+            <optgroup label="Business">
+              <option name="business_owner">Business Owner</option>
+              <option name="freelancer">Freelancer</option>
+            </optgroup>
+          </select>
+
+        </fieldset>
+
+        <fieldset class="sub-form">
+        <legend class="legend">Your opinion</legend>
+
+          <label id="recommendation" for="recommendation">Would you recommend freeCodeCamp to a friend?</label><br>
+          <input id="definitely" type="radio" name="recommendation" value="definitely"><label for="definitely">Definitely</label><br>
+          <input id="maybe" type="radio" name="recommendation" value="maybe"><label for="maybe">Maybe</label><br>
+          <input id="not_sure" type="radio" name="recommendation" value="not_sure"><label for="not_sure">Not sure</label><br>
+
+          <label id="favorite_feature" for="favorite_feature">What is your favorite feature of freeCodeCamp?</label><br>
+          <select id="dropdown" name="favorite_feature">
+            <option value="">Select an option</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="open_source">Open Source</option>
+          </select>
+
+          <label id="improve" for="improve">What would you like to see improved? (Check all that apply)</label><br>
+          <input id="front_end_projects" type="checkbox" name="improve" value="front_end_projects"><label for="fron_end_projects">Frond-end Projects</label><br>
+          <input id="back_end_projects" type="checkbox" name="improve" value="back_end_projects"><label for="back_end_projects">Back-end Projects</label><br>
+          <input id="data_visualization" type="checkbox" name="improve" value="data_visualization"><label for="data_visualization">Data Visualization</label><br>
+          <input id="challenges" type="checkbox" name="improve" value="challenges"><label for="challenges">Challenges</label><br>
+          <input id="open_source_community" type="checkbox" name="improve" value="open_source_community"><label for="open_source_community">Open Source Community</label><br>
+          <input id="gitter_help_rooms" type="checkbox" name="improve" value="gitter_help_rooms"><label for="gitter_help_rooms">Gitter Help Rooms</label><br>
+          <input id="videos" type="checkbox" name="improve" value="videos"><label for="videos">Videos</label><br>
+          <input id="city_meetups" type="checkbox" name="improve" value="city_meetups"><label for="city_meetups">City Meetups</label><br>
+          <input id="wiki" type="checkbox" name="improve" value="wiki"><label for="wiki">Wiki</label><br>
+          <input id="forum" type="checkbox" name="improve" value="forum"><label for="forum">Forum</label><br>
+          <input id="additional_courses" type="checkbox" name="improve" value="additional_courses"><label for="additional_courses">Additional Courses</label><br>
+
+          <label id="comment-label" for="comment">Any comments or suggestions?</label>
+          <textarea id="comment" name="comment" placeholder="Enter your comment here..."></textarea>
+
+        </fieldset>
+        <button id="submit" type="submit" name="submit">Submit</button>
+
+      </form>
+
+    </main>
+    <footer>
+      <address id="address">Created by: <a href="mailto:dariusz.kostrzewski@outlook.com"> ITDevSolutions </a> Waterford, Ireland.</address>
+    </footer>
+
+  </body>
+</html>
