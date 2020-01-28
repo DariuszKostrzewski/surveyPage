@@ -86,6 +86,7 @@ main {
 .sub-form {
   display: block;
   width: auto;
+  border: 0;
   /*border-radius: 20px;
   border-color: rgba(30, 30, 30, 0.9);*/
 }
