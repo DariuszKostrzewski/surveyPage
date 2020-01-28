@@ -86,7 +86,6 @@ main {
 .sub-form {
   display: block;
   width: auto;
-
   border-radius: 20px;
   border-color: rgba(30, 30, 30, 0.9);
 }
@@ -108,16 +107,27 @@ input[type="time"],
 input[type="url"],
 textarea,
 select {
+  display: flex;
   background: rgba(40, 40, 40, 0.9);
-  border: none;
   height: auto;
   margin: 1%;
-  outline: 0;
+  padding-left: 5px;
   width: 30%;
   font-size: 1em;
   background-color: rgba(40, 40, 40, 0.9);
   color: hsla(79, 100%, 54%, 1);
-  display: flex;
+  border-radius: 10px;
+  border: 1px solid hsla(79, 100%, 54%, 0.3);
+}
+
+#name:focus, #email:focus, #number:focus,
+#dropdown-role:focus, #job:focus, #dropdown-favorite:focus,
+#comment:focus, #submit:focus {
+  outline: 0 !important;
+}
+
+input:-webkit-autofill:focus {
+    outline: none !important;
 }
 
 input[type="radio"],
@@ -138,7 +148,7 @@ label {
 }
 
 #recommendation,
-#favorite_feature, #improve, #comment-label {
+#favorite-feature, #improve, #comment-label {
   font-size: 1.5em;
 }
 
